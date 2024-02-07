@@ -1,0 +1,138 @@
+h1 {
+    color: red;
+  }
+    
+/* sm > 576px */
+@media (min-width: 576px) { 
+    h1 {
+        color: blue;
+    }
+}
+  
+/* md > 768px */
+@media (min-width: 768px) {
+    h1 {
+        color: green;
+    }
+}
+
+/* lg > 992px */
+@media (min-width: 992px) { 
+    h1 {
+        color: purple;
+    }
+}
+
+/* xl > 1200px */
+@media (min-width: 1200px) {
+    h1 {
+        color: yellow;
+    }
+}
+
+/* xxl > 1400px */
+@media (min-width: 1400px) {
+    h1 {
+        color: teal;
+    }
+}
+  
+div {
+    margin: 40px 0;
+}
+
+.container {
+    border: 2px solid red;
+}
+  
+  
+.container-fluid {
+    border: 2px solid purple;
+}
+  
+.container-sm {
+    border: 2px solid blue;
+}
+
+.container-md {
+    border: 2px solid crimson;
+}
+
+.container-lg {
+    border: 2px solid chocolate;
+}
+
+.container {
+    border: 5px dotted blue;
+    padding: 5px;
+}
+
+.row {
+    border: 5px solid purple;
+    height: 100px;
+    padding: 5px;
+    margin: 0;
+}
+
+.col {
+    border: 2px dashed red;
+    height: 100%;
+    margin: 0;
+}
+
+.col-4, .col-2, .col-11, .col-1 {
+    border: 2px dashed red;
+    height: 100%;
+    margin: 0;
+}
+
+#vertical {
+    height: 250px;
+    border-color: coral;
+}
+
+#vertical .row {
+    height: 100%;
+}
+
+.col-6 {
+    border: 2px dashed red;
+    height: 50px;
+    margin: 0;
+}
+
+#gutter .col-6 {
+    margin: 0;
+}
+
+.col-3 {
+    border: 2px dashed red;
+    height: 50px;
+    margin: 0;
+}
+
+#offset .row {
+    height: 100px;
+}
+
+.col-md-3 {
+    border: 2px dashed red;
+    height: 50px;
+}
+
+/* Gutter */
+#gutter .row {
+    height: 200px;
+}
+
+#gutter .col-6 {
+    margin: auto;
+}
+
+.row p {
+    border: 2px solid green;
+}
+
+.col-3.odd {
+    background-color: black;
+}

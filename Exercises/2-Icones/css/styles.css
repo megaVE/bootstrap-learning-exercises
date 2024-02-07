@@ -1,0 +1,16 @@
+.container {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.bi.bi-xbox {
+    color: green;
+}
+
+.bi.bi-wind {
+    color: blue;
+}
+
+.bi.bi-wifi {
+    color: goldenrod;
+}

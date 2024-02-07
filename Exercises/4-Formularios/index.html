@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Local JavaScript -->
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <!-- Formulário -->
+    <div class="col-4 m-4">
+        <h2>Regiter Form</h2>
+        <form>
+            <!-- Form Control -->
+            <div class="mb-4">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" name="title" id="title" class="form-control form-control-sm" placeholder="Enter the title">
+                <input type="text" name="title" id="title" class="form-control-sm" placeholder="Enter the title">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" name="email" id="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter your email">
+                <div id="emailHelp" class="form-text">We do not share your email address.</div>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password">
+            </div>
+            <!-- Disabled -->
+            <div class="mb-4">
+                <label for="disabled" class="form-label">Disabled</label>
+                <input type="text" name="disabled" id="disabled" class="form-control" placeholder="This field is disabled" disabled>
+            </div>
+            <!-- Readonly -->
+            <div class="mb-4">
+                <label for="readonly">Read Only</label>
+                <input type="text" name="readonly" id="readonly" class="form-control" placeholder="Read-only field" value="Read Only" readonly>
+                <input type="text" name="readonly-2" id="readonly-2" class="form-control-plaintext" placeholder="Read-only field" value="Read Only" readonly>
+            </div>
+            <!-- Files -->
+            <div class="mb-4">
+                <label for="file" class="form-label">File</label>
+                <input type="file" name="file" id="file" class="form-control">
+            </div>
+            <!-- Datalist -->
+            <div class="mb-4">
+                <label for="datalist" class="form-label">Datalist</label>
+                <input class="form-control" list="datalistOptions" placeholder="Search your color...">
+                <datalist id="datalistOptions">
+                    <option value="red">
+                    <option value="blue">
+                    <option value="green">
+                    <option value="yellow">
+                </datalist>
+            </div>
+            <!-- Color -->
+            <div class="mb-4">
+                <label for="color" class="form-label">Color</label>
+                <input type="color" name="color" id="color" class="form-control form-control-color" title="Pick a color">
+            </div>
+            <!-- Select -->
+            <div class="mb-4">
+                <label for="single-select" class="form-label">Single Select</label>
+                <select name="single-select" id="single-select" class="form-select">
+                    <option selected>Choose an option...</option>
+                    <option value="1">First</option>
+                    <option value="2">Second</option>
+                    <option value="3">Third</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="multi-select" class="form-label">Multi Select</label>
+                <select name="multi-select" id="multi-select" class="form-select" multiple>
+                    <option value="1">First</option>
+                    <option value="2">Second</option>
+                    <option value="3">Third</option>
+                </select>
+            </div>
+            <!-- Checkbox -->
+            <div class="mb-4">
+                <div class="form-check">
+                    <input type="checkbox" name="checkbox" id="checkbox" class="form-check-input">
+                    <label for="checkbox" class="form-check-label">Checkbox</label>
+                </div>
+            </div>
+            <!-- Radio -->
+            <div class="mb-4">
+                <div class="form-check">
+                    <input type="radio" name="radio" id="radio" value="radio" class="form-check-input">
+                    <label for="radio" class="form-check-label">Radio</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" name="radio" id="second-radio" value="second-radio" class="form-check-input">
+                    <label for="second-radio" class="form-check-label">Radio</label>
+                </div>
+            </div>
+            <!-- Switch -->
+            <div class="mb-4">
+                <div class="form-check form-switch">
+                    <input type="checkbox" name="switch" id="switch" class="form-check-input">
+                    <label for="switch" class="form-check-label">Switch</label>
+                </div>
+            </div>
+            <!-- Range -->
+            <div class="mb-4">
+                <label for="range" class="form-label">Range</label>
+                <input type="range" name="range" id="range" class="form-range" min="0" max="5">
+            </div>
+            <!-- Input Groups -->
+            <div class="input-group mb-4">
+                <span class="input-group-text">@</span>
+                <input type="text" name="group" id="group" placeholder="Enter your username..." class="form-control">
+            </div>
+            <!-- Floating Label -->
+            <div class="form-floating mb-4">
+                <input type="text" name="float" id="float" class="form-control" placeholder="Float">
+                <label for="float" class="form-label">Float</label>
+            </div>            
+            <input type="submit" class="btn btn-primary" value="Register">
+            <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+    </div>
+    <!-- Layout -->
+    <div class="container col-6 mt-4 mb-4">
+        <h2>Sign up</h2>
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="layout-email" class="form-label">Email:</label>
+                <input type="email" name="layout-email" id="layout-email" class="form-control" placeholder="Enter your email">
+            </div>
+            <div class="col-md-6">
+                <label for="layout-password" class="form-label">Email:</label>
+                <input type="password" name="layout-password" id="layout-password" class="form-control" placeholder="Enter your password">
+            </div>
+            <div class="col-md-4">
+                <label for="layout-zip" class="form-label">ZIP Code:</label>
+                <input type="text" name="layout-zip" id="layout-zip" class="form-control" placeholder="Enter your zip code">
+            </div>
+            <div class="col-md-10">
+                <label for="layout-address" class="form-label">Address:</label>
+                <input type="text" name="layout-address" id="layout-address" class="form-control" placeholder="Enter your address">
+            </div>
+            <div class="col-md-2">
+                <label for="layout-number" class="form-label">Number:</label>
+                <input type="text" name="layout-number" id="layout-number" class="form-control" placeholder="Number">
+            </div>
+            <div class="col-md-4">
+                <label for="layout-city" class="form-label">City:</label>
+                <input type="text" name="layout-city" id="layout-city" class="form-control" placeholder="Your city">
+            </div>
+            <div class="col-md-4">
+                <label for="layout-state" class="form-label">State:</label>
+                <input type="text" name="layout-state" id="layout-state" class="form-control" placeholder="Your state">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="layout-newsletter" id="layout-newsletter">
+                    <label for="layout-newsletter" class="form-label">Receive newsletter?</label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Register</button>
+            </div>
+        </form>
+    </div>
+    <!-- Validation Form -->
+    <div class="container">
+        <div class="row justify-content-center m-4">
+            <div class="col-6">
+                <h2>Login to continue:</h2>
+                <form class="row needs-validation" novalidate>
+                    <div class="col-12 mb-4">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" name="valid-email" id="valid-email" placeholder="Enter your email" class="form-control" required>
+                        <div class="valid-feedback">Ok</div>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <label for="password" class="form-label">E-mail:</label>
+                        <input type="password" name="valid-password" id="valid-password" placeholder="Enter your password" class="form-control" required>
+                        <div class="valid-feedback">Ok</div>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <button class="btn btn-primary" type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
