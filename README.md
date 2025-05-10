@@ -1,5 +1,5 @@
-# bootstrap-learning-exercises
-Projets developed during the course "Bootstrap 5 from basic to advanced" from Udemy | Projetos desenvolvidos durante o Curso "Bootstrap 5 do básico ao avançado" da Udemy 
+# Bootstrap Learning Exercises (Projetos de Aprendizado de Bootstrap)
+Projects developed during the course "Bootstrap 5 from basic to advanced" from Udemy | Projetos desenvolvidos durante o Curso "Bootstrap 5 do básico ao avançado" da Udemy 
 
 ## 1 - Art
 Development of a grafitti event web page.
